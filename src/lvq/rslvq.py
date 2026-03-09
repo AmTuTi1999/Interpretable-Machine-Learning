@@ -10,7 +10,7 @@ from __future__ import annotations
 import numpy as np
 import matplotlib.pyplot as plt
 
-from base_lvq import BaseLVQ
+from base import BaseLVQ
 
 
 class SNPC(BaseLVQ):
