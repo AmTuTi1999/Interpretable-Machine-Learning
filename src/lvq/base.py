@@ -307,3 +307,8 @@ class BaseLVQ(ABC):
             f"lr={self.alpha_zero}, "
             f"fitted={fitted})"
         )
+
+    def _check_fitted(self) -> None:
+        """Raise if the model has not been trained yet."""
+        if self.prototypes is None:
+            raise RuntimeError("Model is not fitted yet. Call pipeline.train() first.")

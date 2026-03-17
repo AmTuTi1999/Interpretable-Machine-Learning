@@ -165,7 +165,7 @@ class GLVQ(BaseLVQ):
 
         return self.prototypes, self.proto_labels
 
-    def Pl_loss(self, unit: np.ndarray, target_class: int) -> float:
+    def _loss(self, unit: np.ndarray, target_class: int) -> float:
         """Sigmoid loss contribution for a single unit towards a target class.
 
         Args:

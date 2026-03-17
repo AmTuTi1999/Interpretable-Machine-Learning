@@ -1,0 +1,7 @@
+_target_: src.lvq.rslvq.RSLVQ
+num_prototypes_per_class: 1
+initialization_type: 'mean'
+max_iter: 100
+learning_rate: 0.01
+sigma: 1.0
+cat_full: False
